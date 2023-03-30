@@ -11,8 +11,11 @@
     <style>
         body {
             -webkit-font-smoothing: antialiased;
-            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('https://raw.githubusercontent.com/we11cheng/we11cheng.github.io/master/bg.jpg');
+            font-family: 楷体, Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
             font-size: 85%;
             margin: 0;
         }
@@ -20,34 +23,38 @@
         h2 {
             font-size: 220%;
             font-weight: 400;
+            color:rgb(245, 143, 9) ;
         }
         
         .content {
             position: absolute;
+            font-size: 150%;
             width: 100%;
             top: 40%;
             transform: translate(0, -50%);
             text-align: center;
+            color:rgb(245, 143, 9) ;
         }
         
         .timer {
-            font-size: 180%;
+            font-size: 240%;
             line-height: 1.5;
             margin: 1em 0;
         }
         
         .timer b {
-            color: rgb(253, 99, 125);
+            color: rgb(248, 236, 236);
         }
     </style>
 </head>
 
 <body>
     <div class="content">
-        <h2>岳吴双，我们已经在一起了</h2>
+        <h2 style="font-family: 楷体;">双双，我们已经一起度过了</h2>
         <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
         </div>
+        <h2 style="font-family: 楷体;">余生还请多指教喵</h2>
     </div>
     <script language="javascript">
         function timer() {
@@ -77,7 +84,7 @@
     <script language="javascript">
 	    function show_date_time() {
 	        window.setTimeout("show_date_time()", 1000);
-	        BirthDay = new Date("6/7/2021 00:00:00");//这个日期是可以修改的
+	        BirthDay = new Date("6/7/2021 00:00:00");//在一起的日子
 	        today = new Date();
 	        timeold = (today.getTime() - BirthDay.getTime());
 	        sectimeold = timeold / 1000
